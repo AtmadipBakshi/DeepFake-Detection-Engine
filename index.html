@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Fake Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Ramaraja&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Deep Fake Detection</h1>
+    </header>
+
+    <!-- Detection Section -->
+    <main>
+        <section class="upload-section">
+            <h2>Upload an Image for Detection</h2>
+            <div>
+                <input type="file" id="fileInput" accept="image/*" onchange="previewImage()">
+                <br>
+                <img id="previewImage" class="hidden" style="max-width: 250px; border-radius: 10px;">
+            </div>
+            <br>
+            <button onclick="uploadFile()">Detect</button>
+        </section>
+
+        <section id="resultSection" class="hidden">
+            <h2>Detection Result</h2>
+            <div id="loadingSpinner" class="loading-spinner hidden"></div>
+            <p id="resultText">Processing...</p>
+        </section>
+    </main>
+
+    <!-- Reference Images Section -->
+    <section class="references">
+        <h2>Previous Detections</h2>
+
+        <div class="reference-item left">
+            <img src="images/example1.jpg" alt="Example 1">
+            <div class="description">
+                <h3>Result: Fake</h3>
+                <p>This image was identified as a deep fake after a detailed AI-based analysis. The system detected pixel-level inconsistencies, irregular lighting, and abnormal facial distortions that indicate synthetic generation.</p>
+            </div>
+        </div>
+
+        <div class="reference-item right">
+            <img src="images/example2.png" alt="Example 2">
+            <div class="description">
+                <h3>Result: Real</h3>
+                <p>The AI model verified this image as real, with no detected alterations. The structural integrity of facial elements, consistency in lighting, and verified metadata confirm its authenticity.</p>
+            </div>
+        </div>
+
+        <div class="reference-item left">
+            <img src="images/example3.png" alt="Example 3">
+            <div class="description">
+                <h3>Result: Fake</h3>
+                <p>This deep fake was generated using AI-based manipulation tools. The model detected subtle asymmetry, unnatural eye movements, and a mismatch in facial depth that signals synthetic content.</p>
+            </div>
+        </div>
+
+        <div class="reference-item right">
+            <img src="images/example4.jpg" alt="Example 4">
+            <div class="description">
+                <h3>Result: Real</h3>
+                <p>A high-resolution real image taken from a trusted source. AI verification confirms facial symmetry, natural shadowing, and no deep fake artifacts, ensuring its legitimacy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Deep Fake Detection | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
