@@ -1,19 +1,19 @@
-# 🧠 DeepFake Detection Engine
+ DeepFake Detection Engine
 
 > Detects deepfakes using TensorFlow and the FaceForensics++ dataset.
 
-## 🚀 Overview
+ 🚀 Overview
 
 A Python-based tool that uses a CNN model to classify real vs fake images/videos. Built with TensorFlow and trained on FaceForensics++.
 
-## 🛠 Features
+ 🛠 Features
 
 - CNN-based deepfake classifier
 - Image and frame-level detection
 - Trained on real-world dataset
 - CLI interface
 
-## 📦 Setup
+ 📦 Setup
 
 ```bash
 git clone https://github.com/your-username/deepfake-detection.git
