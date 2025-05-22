@@ -4,7 +4,7 @@
 
  🚀 Overview
 
-A Python-based tool that uses a CNN model to classify real vs fake images/videos. Built with TensorFlow and trained on FaceForensics++.
+A Python-based tool that uses a CNN model to classify real vs fake images. Built with TensorFlow and trained on FaceForensics++.
 
  🛠 Features
 
